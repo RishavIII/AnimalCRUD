@@ -40,6 +40,7 @@ public class ElephantService {
   }
 
   public Elephant updateElephant(Long elephantId, Elephant elephant) {
+    elephant.setElephantId(elephantId);
     return elephantRepository.save(elephant);
   }
 
