@@ -34,14 +34,13 @@
 
 <div class="container" style="margin-top: 15px;" >
     <h1>${title}</h1>
-    <form id="new-student" action="/students" method="post" enctype="multipart/form-data">
+    <form id="new-elephant" action="/elephants" method="post" enctype="multipart/form-data">
         <input type="text" id="name" name="name" placeholder="Name"/>
-        <input type="email" id="email" name="email" placeholder="example@domain.edu"/>
-        <input type="text" id="major" name="major" placeholder="Major"/>
-        <input type="number" id="gpa" name="gpa" step="0.01" placeholder="GPA"/>
-        <input type="file" id="picture" name="picture" required/>
+        <input type="text" id="description" name="description" placeholder="Description"/>
+        <input type="text" id="gender" name="gender" placeholder="Gender"/>
+        <input type="number" id="age" name="age" step="1" placeholder="Age"/>
         <button type="submit" class="btn btn-primary">Save</button>
-       <a href="/students" class="btn btn-outline-danger" >Cancel</a>
+       <a href="/elephants" class="btn btn-outline-danger" >Cancel</a>
     </form>
 
 </div>

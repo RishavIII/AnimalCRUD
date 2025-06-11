@@ -17,12 +17,12 @@
 
   <!-- Begin Nav Bar -->
   <nav class="navbar navbar-expand-lg  navbar-dark" style="background-color: #799351;">
-    <a class="navbar-brand" href="/students" style="margin: 10px;">
+    <a class="navbar-brand" href="/elephants" style="margin: 10px;">
       <img src="/logo.jpg" alt="" width="80" height="60">
     </a>
     <ul class="nav justify-content-end">
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="/students">Home</a>
+        <a class="nav-link active" aria-current="page" href="/elephants">Home</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Second</a>
@@ -35,19 +35,14 @@
 
   <div class="container" style="margin-top: 15px;">
     <h1>${title}</h1>
-    <img src="/profile-pictures/${(student.profilePicturePath)!'avatar.png'}" class="card-img-top"
-      style="height: 100px; width: 100px;" alt="profile picture">
-    <form id="new-student" action="/students/update/${student.studentId?c}" method="post" enctype="multipart/form-data">
-      <input type="text" id="studentId" name="studentId" value="${student.studentId?c}" readonly />
-      <input type="text" id="name" name="name" value="${student.name}" placeholder="Name" />
-      <input type="email" id="email" name="email" value="${student.email}" placeholder="example@domain.edu" />
-      <input type="text" id="major" name="major" value="${student.major}" placeholder="Major" />
-      <input type="number" id="gpa" name="gpa" step="0.01" value="${student.gpa}" placeholder="GPA" /><br>
-      <label for="profilePicturePath" class="form-label">Current Picture</label>
-      <input type="text" id="profilePicturePath" name="profilePicturePath" value="${(student.profilePicturePath)}" readonly />
-      <input type="file" id="picture" name="picture" />
+    <form id="new-elephant" action="/elephants/update/${elephant.elephantId}" method="post" enctype="multipart/form-data">
+      <input type="text" id="elephantId" name="elephantId" value="${elephant.elephantId?c}" readonly />
+      <input type="text" id="name" name="name" value="${elephant.name}" placeholder="Name" />
+      <input type="text" id="description" name="description" value="${elephant.description}" placeholder="Description" />
+      <input type="text" id="gender" name="gender" value="${elephant.gender}" placeholder="Gender" />
+      <input type="number" id="age" name="age" step="1" value="${elephant.age}" placeholder="Age" /><br>
       <button type="submit" class="btn btn-primary">Save</button>
-      <a href="/students/${student.studentId?c}" class="btn btn-outline-danger">Cancel</a>
+      <a href="/elephants/${elephant.elephantId}" class="btn btn-outline-danger">Cancel</a>
     </form>
 
   </div>

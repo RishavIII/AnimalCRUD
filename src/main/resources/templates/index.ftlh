@@ -1,95 +1,90 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <link 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+      crossorigin="anonymous">
+    <script 
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    <title>Elephant List</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Animal Gallery</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="details.html">Details</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="container mt-4">
-        <h1 class="mb-4 text-center">The Animal Gallery</h1>
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="images/elephant.jpg" class="card-img-top" alt="African Elephant">
-                    <div class="card-body">
-                        <h5 class="card-title">African Elephant</h5>
-                        <p class="card-text">The African elephant is the largest land mammal on Earth, known for its
-                            intelligence and complex social structures.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="images/tiger.jpg" class="card-img-top" alt="Bengal Tiger">
-                    <div class="card-body">
-                        <h5 class="card-title">Bengal Tiger</h5>
-                        <p class="card-text">The Bengal tiger is a powerful predator from India and Bangladesh,
-                            recognized for its striking orange coat and black stripes.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="images/whale.jpg" class="card-img-top" alt="Blue Whale">
-                    <div class="card-body">
-                        <h5 class="card-title">Blue Whale</h5>
-                        <p class="card-text">The blue whale is the largest animal ever known to have lived, reaching
-                            lengths of up to 100 feet in the ocean.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="images/falcon.jpg" class="card-img-top" alt="Peregrine Falcon">
-                    <div class="card-body">
-                        <h5 class="card-title">Peregrine Falcon</h5>
-                        <p class="card-text">The peregrine falcon is the fastest bird, capable of diving at speeds over
-                            200 mph to catch its prey.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="images/panda.jpg" class="card-img-top" alt="Giant Panda">
-                    <div class="card-body">
-                        <h5 class="card-title">Giant Panda</h5>
-                        <p class="card-text">The giant panda is a bear native to China, famous for its distinctive
-                            black-and-white coat and bamboo diet.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
-</body>
 
+<!-- Begin Nav Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #799351;">
+    <a class="navbar-brand" href="/elephants" style="margin: 10px;">
+        <img src="/logo.jpg" alt="Logo" width="80" height="60">
+    </a>
+    <ul class="nav justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/elephants">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Second</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Third</a>
+        </li>
+    </ul>
+</nav>
+<!-- End Nav Bar -->
+
+<div class="container" style="margin-top: 15px;">
+    <h1>${title}</h1>
+    <a href="/elephants/createForm" class="btn btn-outline-primary" style="float:right;">
+      Create New Elephant
+    </a>
+
+    <form action="/elephants/name">
+        <input 
+          type="text" 
+          name="key" 
+          placeholder="Search By Name 🔍" 
+          class="form-control mb-3" 
+          style="max-width: 300px;">
+    </form>
+
+    <!-- Elephants Table -->
+    <table class="table table-striped rounded-3 overflow-hidden">
+        <thead class="table-dark">
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+        <tbody>
+        <#list elephants as elephant>
+          <tr>
+            <td>
+              <a 
+                href="/elephants/${elephant.elephantId?c}" 
+                style="color:#000000">
+                ${elephant.elephantId?c}
+              </a>
+            </td>
+            <td>${elephant.name!''}</td>
+            <td>
+              <a 
+                href="/elephants/gender/${elephant.gender!''}" 
+                style="color:#000000">
+                ${elephant.gender!''}
+              </a>
+            </td>
+            <td>${elephant.age!0?c}</td>
+          </tr>
+        </#list>
+        </tbody>
+    </table>
+
+</div>
+</body>
 </html>
