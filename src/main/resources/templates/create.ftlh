@@ -15,22 +15,20 @@
 <body>
 
 <!-- Begin Nav Bar -->
-<nav class="navbar navbar-expand-lg  navbar-dark" style="background-color: #799351;">
-    <a class="navbar-brand" href="/students" style="margin: 10px;">
-        <img src="/logo.jpg" alt="" width="80" height="60">
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #808080;">
+    <a class="navbar-brand" href="/elephants" style="margin: 10px;">
+      <img src="/logo.jpg" alt="Logo" width="80" height="60">
     </a>
     <ul class="nav justify-content-end">
-        <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/students">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Second</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Third</a>
-        </li>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="/elephants">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/elephants/about">About</a>
+      </li>
     </ul>
-</nav>
+  </nav>
+  <!-- End Nav Bar -->
 
 <div class="container" style="margin-top: 15px;" >
     <h1>${title}</h1>

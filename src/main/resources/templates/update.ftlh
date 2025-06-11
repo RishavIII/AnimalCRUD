@@ -35,7 +35,7 @@
 
   <div class="container" style="margin-top: 15px;">
     <h1>${title}</h1>
-    <form id="new-elephant" action="/elephants/update/${elephant.elephantId}" method="post" enctype="multipart/form-data">
+    <form id="new-elephant" action="/elephants/${elephant.elephantId}" method="post" enctype="multipart/form-data">
       <input type="text" id="elephantId" name="elephantId" value="${elephant.elephantId?c}" readonly />
       <input type="text" id="name" name="name" value="${elephant.name}" placeholder="Name" />
       <input type="text" id="description" name="description" value="${elephant.description}" placeholder="Description" />
