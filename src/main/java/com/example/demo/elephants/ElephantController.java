@@ -88,16 +88,6 @@ public class ElephantController {
     return "redirect:/elephants/" + id;
   }
 
-  @PostMapping("/elephants/writeFile")
-  public String writeJson(@RequestBody Elephant elephant) {
-    return elephantService.writeJson(elephant);
-  }
-
-  @GetMapping("/elephants/readFile")
-  public Object readJson() {
-    return elephantService.readJson();
-  }
-
   @GetMapping("/elephants/about")
   public String about() {
     return "about";
